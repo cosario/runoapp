@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSellerActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/shape_icon">
+
+
+
+
+
+
+        <ImageButton
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/logoutBtn"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_logout"
+            android:background="@null"/>
+
+        <ImageButton
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/editProfileBtn"
+            android:layout_toLeftOf="@+id/logoutBtn"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:background="@null"/>
+
+<!--        ADD PRODUCTS      -->
+        <ImageButton
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/addProducttBtn"
+            android:layout_toStartOf="@+id/editProfileBtn"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/editProfileBtn" />
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            app:c_border="true"
+            app:c_border_color="@color/white"
+            android:src="@drawable/ic_person_yellow"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/nameIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profileIv" />
+
+        <TextView
+            android:id="@+id/shopNameIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:layout_below="@+id/nameIv"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profileIv" />
+        <TextView
+            android:id="@+id/emailIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_below="@+id/shopNameIv"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profileIv" />
+<!--        tabs    -->
+        <LinearLayout
+            android:layout_below="@+id/profileIv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_tab01"
+            android:padding="5dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tabProductsIv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_tab02"
+                android:gravity="center"
+                android:text="Products"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tabOrdersIv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    tabs-->
+    <RelativeLayout
+        android:id="@+id/productsRl"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ordersRl"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>

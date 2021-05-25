@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063734035202",
+    "project_id": "runo-80677",
+    "storage_bucket": "runo-80677.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063734035202:android:d405e32270d1271947b81b",
+        "android_client_info": {
+          "package_name": "com.example.runo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063734035202-j0atl8cejensh5g3i367bc9at81b8tne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdOw8UEHRp5YCM-wG6BMkfLHgG0IlNaqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063734035202-j0atl8cejensh5g3i367bc9at81b8tne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
